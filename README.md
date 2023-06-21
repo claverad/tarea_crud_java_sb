@@ -27,6 +27,6 @@ Pasos previos a realizar:
     
   2.- Luego de crear la bbdd,levantar el proyecto ejecutando el archivo principal.
   
-  3.- Se adjunta collection con métodos postman permitidos por la api.
+  3.- Se adjunta collection con métodos postman permitidos por la api Usuarios.postman_collection.json.
 
   4.- El proyecto cuenta con swagger y actuator.
