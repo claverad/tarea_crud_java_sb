@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "f70961ae-8ce0-47c2-8ac2-2946d9c390ef",
+		"name": "Usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/usuarios/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Wena TU\",\n    \"correo\": \"flayoud@wd.org\",\n    \"pass\": \"miPass323\",\n    \"telefono\": \n        {\n            \"numero\": \"4543332\",\n            \"codCiudad\": \"2\",\n            \"codPais\": \"56\"\n        }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/usuarios/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get usuarios by correo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/usuarios/?correo=yoyomd@wd.org",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						""
+					],
+					"query": [
+						{
+							"key": "correo",
+							"value": "yoyomd@wd.org"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get usuarios by uuid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/usuarios/d9007039-8d7a-4227-bb44-ecb393c9a20a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"d9007039-8d7a-4227-bb44-ecb393c9a20a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar usuarios",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "telefono_id",
+							"value": "8b8559ff-2b67-4ff2-b0ea-b0ac426bb988",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/usuarios/d9007039-8d7a-4227-bb44-ecb393c9a20a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"d9007039-8d7a-4227-bb44-ecb393c9a20a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update usuarios",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Holis JA\",\n    \"correo\": \"holis@wd.org\",\n    \"pass\": \"988774333\",\n    \"usuario_id\": \"442e058d-b8bd-4623-9802-7645fb1ea2ba\",\n    \"telefono\": {\n        \"telefono_id\": \"172546d3-a2a5-42ee-be31-3e1b38b00e78\",\n        \"numero\": \"987445321\",\n        \"codCiudad\": \"2\",\n        \"codPais\": \"56\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/usuarios/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
