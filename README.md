@@ -1,6 +1,7 @@
 # CRUD API Escalab
 
 Pasos previos a realizar:
+
   1.- Crear BBDD cursos con las siguiente tablas; usuarios, telefonos.
 
       CREATE TABLE usuarios (
