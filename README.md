@@ -1,4 +1,4 @@
-# CRUD API Escalab
+# CRUD API Escalab - curso java.
 
 Pasos previos a realizar:
 
@@ -28,3 +28,5 @@ Pasos previos a realizar:
   2.- Luego de crear la bbdd,levantar el proyecto ejecutando el archivo principal.
   
   3.- Se adjunta collection con métodos postman permitidos por la api.
+
+  4.- El proyecto cuenta con swagger y actuator.
